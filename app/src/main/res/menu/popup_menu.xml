@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/popup_item01"
+        android:title="item1"
+        android:orderInCategory="100"
+        app:showAsAction="withText"/>
+    <item android:id="@+id/popup_item02"
+        android:title="item2"
+        android:orderInCategory="100"
+        app:showAsAction="withText"/>
+    <item android:id="@+id/popup_item03"
+        android:title="item3"
+        android:orderInCategory="100"
+        app:showAsAction="withText"/>
+</menu>
