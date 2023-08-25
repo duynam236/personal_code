@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical">
+
+    <TextView
+        android:id="@+id/responseText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Url link music:"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Text link here"
+        android:text=""
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/get_link"
+        android:layout_gravity="center_horizontal"
+        android:text="Get link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/play"
+        android:layout_gravity="center_horizontal"
+        android:text="Play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_gravity="center_horizontal"
+        android:text="Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
