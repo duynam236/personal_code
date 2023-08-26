@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-18dp"
+            tools:layout_editor_absoluteY="-5dp">
+
+            <EditText
+                android:id="@+id/name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your name" />
+
+            <EditText
+                android:id="@+id/phonenumber_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your phone number"
+                android:layout_below="@id/name_edit"/>
+
+            <RadioGroup
+                android:id="@+id/radiogroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/phonenumber_edit">
+
+                <RadioButton
+                    android:id="@+id/cheese"
+                    android:layout_width="116dp"
+                    android:layout_height="48dp"
+                    android:checked="true"
+                    android:text="Cheese" />
+
+                <RadioButton
+                    android:id="@+id/cheese_2"
+                    android:layout_width="116dp"
+                    android:layout_height="48dp"
+                    android:text="2 x Cheese" />
+
+                <RadioButton
+                    android:id="@+id/none"
+                    android:layout_width="116dp"
+                    android:layout_height="48dp"
+                    android:text="None" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radiogroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/radiogroup1">
+
+                <RadioButton
+                    android:id="@+id/square"
+                    android:layout_width="116dp"
+                    android:layout_height="48dp"
+                    android:text="Square" />
+
+                <RadioButton
+                    android:id="@+id/round"
+                    android:layout_width="116dp"
+                    android:layout_height="48dp"
+                    android:checked="true"
+                    android:text="Round" />
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radiogroup2"
+                >
+
+                <CheckBox
+                    android:id="@+id/pepperoni"
+                    android:layout_width="116dp"
+                    android:layout_height="48dp"
+                    android:text="Pepperoni" />
+
+                <CheckBox
+                    android:id="@+id/mushroom"
+                    android:layout_width="116dp"
+                    android:layout_height="48dp"
+                    android:text="Mushroom"
+                    android:layout_toRightOf="@id/pepperoni"/>
+
+                <CheckBox
+                    android:id="@+id/veggies"
+                    android:layout_width="116dp"
+                    android:layout_height="48dp"
+                    android:text="Veggies"
+                    android:layout_toRightOf="@id/mushroom"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/order_note"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:text="Your ordering:"
+                android:textSize="24dp"
+                android:layout_below="@id/relativelayout2"/>
+
+            <EditText
+                android:id="@+id/ordering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dcdde1"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:maxLines="10"
+                android:minLines="6"
+                android:scrollbars="vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/order_note"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/ordering"
+                >
+
+                <Button
+                    android:id="@+id/exit"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#7f8c8d"
+                    android:text="Exit" />
+                <View
+                    android:id="@+id/emptyview"
+                    android:layout_width="38dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@id/exit"/>
+                <Button
+                    android:id="@+id/sms_place"
+                    android:layout_width="240dp"
+                    android:layout_height="40dp"
+                    android:background="#7f8c8d"
+                    android:text="SMS - PLACE YOUR ORDER"
+                    android:layout_toRightOf="@id/emptyview"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
